@@ -3,7 +3,7 @@
 def nyc_pigeon_organizer(data)
   new_hash = {}
   data.each do |color_gender_lives, stats1|
-    stats.each do |stats2, names|
+    stats1.each do |stats2, names|
       names.each do |name| 
         if !new_hash[name] 
           new_hash[name] = {}
